@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="singlecar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbox">
+        <div class="notnav" >
+            <div class="logo">
+                <p><a href="index.html" class="anc" >Gedi</a></p>
+            </div>
+
+            <div class="box2">
+                <!-- notification box -->
+                <img src="https://www.svgrepo.com/show/497407/profile-circle.svg" alt="" class="img" >
+                  <!-- burger -->
+                <div class="dropdown">
+                    <nav class="navbar navbar-dark">
+                        <div class="container-fluid  ">
+                          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Gedi</h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Finance</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Insurance</a>
+                                  </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Customer Services</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                  </a>
+                                  <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Sedan</a></li>
+                                    <li><a class="dropdown-item" href="#">SUV</a></li>
+                                    <li><a class="dropdown-item" href="#">Luxury</a></li>
+                                    <li><a class="dropdown-item" href="#">HatchBack</a></li>
+                                    <li>
+                                      <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Under 10Lakh</a></li>
+                                    <li><a class="dropdown-item" href="#">Under 20Lakh</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+            <!-- Anchor tag in navbar -->
+            <div class="anchorbox">
+                <div class="abox"  >
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="abox" id="onboard" >
+                    <a href="carcatalogue.html">Catalogue</a>
+                </div>
+                <div class="abox">
+                    <a href="insurance.html">Insurance</a>
+                </div>
+                <div class="abox">
+                    <a href="testdrive.html">Test Drive</a>
+                </div>
+                <div class="abox">
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+            <div class="end">
+                <!-- search -->
+                 <div class="searchbox">
+                    <div class="shit">
+                        <input type="search" name="" placeholder="" id="" class="searchtag"  >
+                        <img src="https://www.svgrepo.com/show/521826/search.svg" alt="" class="searchicon">
+                    </div>
+                 </div>
+                <!-- burger -->
+                <nav class="navbar bg-white  ">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-dark">
+                          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Gedi</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">Finance</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Insurance</a>
+                                </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Customer Services</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Categories
+                                </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sedan</a></li>
+                                <li><a class="dropdown-item" href="#">SUV</a></li>
+                                <li><a class="dropdown-item" href="#">Luxury</a></li>
+                                <li><a class="dropdown-item" href="#">HatchBack</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Under 10Lakh</a></li>
+                                <li><a class="dropdown-item" href="#">Under 20Lakh</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <!-- burger end -->
+
+            </div>
+        </div>
+    </div>
+    <!--navbar end-->
+    <hr>
+
+
+    <div class="name">
+        <h3>Ferrari 296 GTB</h3>
+    </div>
+    <div class="flex-container">
+   <!--slider carsoule start-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.bigboytoyz.com/new-version/products/product/ferrari-296-gtb-01-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.bigboytoyz.com/new-version/products/product/ferrari-296-gtb-01-12.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.bigboytoyz.com/new-version/products/product/ferrari-296-gtb-01-9.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+      <div class="ramram">
+      <button type="button" class="btn btn-warning btn-lg w-100">Reserve Now</button>
+    </div>
+       <!--slider carsoule end-->
+
+       <!-- car content -->
+        <div class="content">
+            <div class="ses">
+            <p class="intro">The Ferrari 296 is a sports car built since 2022 by the Italian company Ferrari. The 296 is a two-seater, offered as a GTB coupé and a GTS folding hard-top convertible. It is a plug-in hybrid with a rear mid-engine, rear-wheel-drive layout and its power train combines a twin-turbocharged 120-degree block-angle V6 with an electric drive fitted in between the engine and gearbox.The 296 can be driven in electric-only mode for short distances, to comply with use in urban zero-emission zones.</p>
+            
+                <h5>Specifications & features </h5>
+                <hr>
+                <h6>Features</h6><br>
+                <!-- for containing icons and text below -->
+                <div class="flexi">
+                    <div class="icon1" margin-left="10px">
+                        <center><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg><br>
+                        <p>Vehicle Type<br>
+                            <b>Sports Coupe</b></p></center>
+                    </div>
+                    <div class="icon1" margin-left="10px">
+                        <center><img src="https://www.svgrepo.com/show/533724/engine-warning.svg" width="24px" alt=""><br>
+                        <p>Engine<br>
+                            <b>2992cc, Twin-Turbocharged, V6, DOHC</b></p></center>
+                    </div>
+                    <div class="icon1" margin-left="10px">
+                        <center><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80.3 44C69.8 69.9 64 98.2 64 128s5.8 58.1 16.3 84c6.6 16.4-1.3 35-17.7 41.7s-35-1.3-41.7-17.7C7.4 202.6 0 166.1 0 128S7.4 53.4 20.9 20C27.6 3.6 46.2-4.3 62.6 2.3S86.9 27.6 80.3 44zM555.1 20C568.6 53.4 576 89.9 576 128s-7.4 74.6-20.9 108c-6.6 16.4-25.3 24.3-41.7 17.7S489.1 228.4 495.7 212c10.5-25.9 16.3-54.2 16.3-84s-5.8-58.1-16.3-84C489.1 27.6 497 9 513.4 2.3s35 1.3 41.7 17.7zM352 128c0 23.7-12.9 44.4-32 55.4L320 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-296.6c-19.1-11.1-32-31.7-32-55.4c0-35.3 28.7-64 64-64s64 28.7 64 64zM170.6 76.8C163.8 92.4 160 109.7 160 128s3.8 35.6 10.6 51.2c7.1 16.2-.3 35.1-16.5 42.1s-35.1-.3-42.1-16.5c-10.3-23.6-16-49.6-16-76.8s5.7-53.2 16-76.8c7.1-16.2 25.9-23.6 42.1-16.5s23.6 25.9 16.5 42.1zM464 51.2c10.3 23.6 16 49.6 16 76.8s-5.7 53.2-16 76.8c-7.1 16.2-25.9 23.6-42.1 16.5s-23.6-25.9-16.5-42.1c6.8-15.6 10.6-32.9 10.6-51.2s-3.8-35.6-10.6-51.2c-7.1-16.2 .3-35.1 16.5-42.1s35.1 .3 42.1 16.5z"/></svg><br>
+                        <p>Transmission<br>
+                            <b>8-Speed DCT Automatic Transmission</b></p></center>
+                    </div>
+                    <div class="icon1" margin-left="10px">
+                        <center><svg xmlns="http://www.w3.org/2000/svg"  width="24px" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 96c38.4 0 73.7 13.5 101.3 36.1l-32.6 32.6c-4.6 4.6-5.9 11.5-3.5 17.4s8.3 9.9 14.8 9.9l112 0c8.8 0 16-7.2 16-16l0-112c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-34 34C363.4 52.6 312.1 32 256 32c-10.9 0-21.5 .8-32 2.3l0 64.9c10.3-2.1 21-3.2 32-3.2zM132.1 154.7l32.6 32.6c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-112c0-8.8-7.2-16-16-16L64 48c-6.5 0-12.3 3.9-14.8 9.9s-1.1 12.9 3.5 17.4l34 34C52.6 148.6 32 199.9 32 256c0 10.9 .8 21.5 2.3 32l64.9 0c-2.1-10.3-3.2-21-3.2-32c0-38.4 13.5-73.7 36.1-101.3zM477.7 224l-64.9 0c2.1 10.3 3.2 21 3.2 32c0 38.4-13.5 73.7-36.1 101.3l-32.6-32.6c-4.6-4.6-11.5-5.9-17.4-3.5s-9.9 8.3-9.9 14.8l0 112c0 8.8 7.2 16 16 16l112 0c6.5 0 12.3-3.9 14.8-9.9s1.1-12.9-3.5-17.4l-34-34C459.4 363.4 480 312.1 480 256c0-10.9-.8-21.5-2.3-32zM256 416c-38.4 0-73.7-13.5-101.3-36.1l32.6-32.6c4.6-4.6 5.9-11.5 3.5-17.4s-8.3-9.9-14.8-9.9L64 320c-8.8 0-16 7.2-16 16l0 112c0 6.5 3.9 12.3 9.9 14.8s12.9 1.1 17.4-3.5l34-34C148.6 459.4 199.9 480 256 480c10.9 0 21.5-.8 32-2.3l0-64.9c-10.3 2.1-21 3.2-32 3.2z"/></svg><br>
+                        <p>Peak Torque<br>
+                            <b>740Nm @ 6250 rpm</b></p></center>
+                    </div>
+                    <div class="icon1" margin-left="10px">
+                        <center><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 32l-74.8 0c-27.1 0-51.3 17.1-60.3 42.6L3.1 407.2C1.1 413 0 419.2 0 425.4C0 455.5 24.5 480 54.6 480L256 480l0-64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 64 201.4 0c30.2 0 54.6-24.5 54.6-54.6c0-6.2-1.1-12.4-3.1-18.2L455.1 74.6C446 49.1 421.9 32 394.8 32L320 32l0 64c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64zm64 192l0 64c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg><br>
+                        <p>Drive<br>
+                            <b>RWD</b></p></center>
+                    </div>
+                    <div class="icon1" margin-left="10px">
+                        <center><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M32 64C32 28.7 60.7 0 96 0L256 0c35.3 0 64 28.7 64 64l0 192 8 0c48.6 0 88 39.4 88 88l0 32c0 13.3 10.7 24 24 24s24-10.7 24-24l0-154c-27.6-7.1-48-32.2-48-62l0-64L384 64c-8.8-8.8-8.8-23.2 0-32s23.2-8.8 32 0l77.3 77.3c12 12 18.7 28.3 18.7 45.3l0 13.5 0 24 0 32 0 152c0 39.8-32.2 72-72 72s-72-32.2-72-72l0-32c0-22.1-17.9-40-40-40l-8 0 0 144c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32L32 64zM96 80l0 96c0 8.8 7.2 16 16 16l128 0c8.8 0 16-7.2 16-16l0-96c0-8.8-7.2-16-16-16L112 64c-8.8 0-16 7.2-16 16z"/></svg><br>
+                        <p>Fuel<br>
+                            <b>Hybrid</b></p></center>
+                    </div>
+                    <br>
+                    <div class="icon1" margin-left="10px">
+                        <center><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 96c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l96 0c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l16 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 160c0-35.3 28.7-64 64-64l16 0zm304 96c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 32-32 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0 0 32c0 8.8 7.2 16 16 16s16-7.2 16-16l0-32 32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0 0-32zM80 240c0 8.8 7.2 16 16 16l96 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-96 0c-8.8 0-16 7.2-16 16z"/></svg><br>
+                        <p>Peak Power<br>
+                            <b>654Ps / 645Bhp @ 7000 rpm</b></p></center>
+                    </div>
+                    
+                    
+                    
+            </div>
+
+            </div>
+        </div>
+    </div>  <br><br><br><br><br><br><br><br>
+
+    <div class="accordion p-4" id="accordionExample">
+        <h6>Full Specifications</h6>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Overview
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="text-bg-light p-3">Vehicle Type :
+                    Sports / Coupe</div>
+                <div class="text-bg-secondary p-3">Engine :
+                    2992cc, Twin-Turbocharged, V6, DOHC</div>
+                    <div class="text-bg-light p-3">Fuel :
+                        Hybrid</div>
+                    <div class="text-bg-secondary p-3">Peak Power :
+                        654Ps / 645Bhp @ 7000 rpm</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Engine & Transmission
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="text-bg-light p-3">Engine Displacement:
+                    2992cc, Twin-Turbocharged, V6, DOHC</div>
+                <div class="text-bg-secondary p-3">Power Figure:
+                    654Ps / 645Bhp @ 7000 rpm</div>
+                <div class="text-bg-light p-3">Torque Figure:
+                    740Nm @ 6250 rpm</div>
+                <div class="text-bg-secondary p-3">Transmission:
+                    8 Speed Dual Clutch Automatic Transmission</div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             Hybrid System
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="text-bg-light p-3">E-Motor Type/Size:
+                    7.45kWh Battery Pack</div>
+                <div class="text-bg-secondary p-3">Combined Power & Torque:
+                    830Ps / 809Bhp & 741Nm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+<!-- <div class="text-bg-light p-3"></div>
+<div class="text-bg-secondary p-3"></div>
+<div class="text-bg-light p-3"></div> -->
