@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gedi - Luxury Car Retail</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
+    .header { background-color: #000; color: #fff; padding: 20px; text-align: center; }
+    .content { padding: 20px; }
+    .car-list { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .car { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; text-align: center; width: 200px; }
+    .car img { width: 100%; border-radius: 5px; }
+    .customization, .emi-calculator { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; margin-top: 20px; }
+    .footer { background-color: #000; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Gedi - Luxury Car Retail</h1>
+    <p>Discover, Customize, and Drive Your Dream Car</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Car Catalog Section -->
+    <section class="car-catalog">
+      <h2>Our Cars</h2>
+      <div class="car-list">
+        <div class="car">
+          <img src="car1.jpg" alt="Car 1">
+          <h3>Model X</h3>
+          <p>$80,000</p>
+          <button onclick="customizeCar('Model X', 80000)">Customize</button>
+        </div>
+        <div class="car">
+          <img src="car2.jpg" alt="Car 2">
+          <h3>Model Y</h3>
+          <p>$90,000</p>
+          <button onclick="customizeCar('Model Y', 90000)">Customize</button>
+        </div>
+        <!-- Add more car items as needed -->
+      </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="customization">
+      <h2>Customize Your Car</h2>
+      <p id="selected-car">Select a car from the catalog above to start customizing</p>
+      <div>
+        <label for="color">Choose Color:</label>
+        <select id="color">
+          <option value="Red">Red</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+        </select>
+      </div>
+      <div>
+        <label for="interior">Choose Interior:</label>
+        <select id="interior">
+          <option value="Leather">Leather</option>
+          <option value="Suede">Suede</option>
+        </select>
+      </div>
+      <button onclick="saveCustomization()">Save Customization</button>
+    </section>
+
+    <!-- EMI Calculator Section -->
+    <section class="emi-calculator">
+      <h2>EMI Calculator</h2>
+      <p>Calculate your monthly installments</p>
+      <input type="number" id="loanAmount" placeholder="Enter car price" readonly />
+      <input type="number" id="interestRate" placeholder="Interest Rate (%)" value="5">
+      <input type="number" id="loanTenure" placeholder="Loan Tenure (months)" value="36">
+      <button onclick="calculateEMI()">Calculate EMI</button>
+      <p id="emi-result"></p>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>&copy; 2023 Gedi - Luxury Car Retail. All rights reserved.</p>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Variables for customization and EMI calculations
+    let selectedCarModel = '';
+    let selectedCarPrice = 0;
+
+    // Function to select and customize a car
+    function customizeCar(model, price) {
+      selectedCarModel = model;
+      selectedCarPrice = price;
+      document.getElementById('selected-car').innerText = `Customizing: ${model}`;
+      document.getElementById('loanAmount').value = price;
+    }
+
+    // Function to save car customization
+    function saveCustomization() {
+      const color = document.getElementById('color').value;
+      const interior = document.getElementById('interior').value;
+      alert(`Customization Saved! \nModel: ${selectedCarModel} \nColor: ${color} \nInterior: ${interior}`);
+    }
+
+    // EMI Calculation Function
+    function calculateEMI() {
+      const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+      const interestRate = parseFloat(document.getElementById('interestRate').value);
+      const loanTenure = parseFloat(document.getElementById('loanTenure').value);
+
+      if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTenure)) {
+        alert('Please enter valid values for loan amount, interest rate, and tenure.');
+        return;
+      }
+
+      const monthlyInterestRate = interestRate / 12 / 100;
+      const emi = loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTenure) / 
+                  (Math.pow(1 + monthlyInterestRate, loanTenure) - 1);
+      document.getElementById('emi-result').innerText = `Estimated EMI: $${emi.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
