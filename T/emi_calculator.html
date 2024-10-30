@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="emi_calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dbba">
+        <p class="headi">Payment Plan / EMI Calculator</p>
+        <form class="speci">
+            <label for="larri" ><p class="sub">Car Name / Model :</p></h3></label>
+            <select name="larri" id="larri">
+                <option value="balle">BMW M4 Comption M xDrive</option>
+            </select>
+            
+            <p class="sub">Modifications :</p>
+            <label for="rang" class="sub">~ Color :</label><br>
+            <div class="colorr">
+                <img src="blue.jpg" alt="blue" class="uh">
+                <img src="black.jpg" alt="blue" class="uh">
+                <img src="grey.jpg" alt="blue" class="uh">
+                <img src="green.jpg" alt="blue" class="uh">
+                <img src="red.jpg" alt="blue" class="uh">
+                
+                <img src="dark_grey.jpg" alt="blue" class="uh">
+                <img src="yelloe.jpg" alt="blue" class="uh">
+                <img src="blue2.jpg" alt="blue" class="uh">
+                <img src="red2.jpg" alt="blue" class="uh">
+                <img src="light_grey.jpg" alt="blue" class="uh">
+            </div>
+            <label for="gola" class="sub">~ Rim :</label>
+            <div class="rimzz">
+                <img src="rim1.jpg" alt="1" class="heh">
+                <img src="rim2.jpg" alt="2" class="heh">
+                <img src="rim3.jpg" alt="3" class="heh">
+                <img src="rim4.jpg" alt="4" class="heh">
+            </div>
+        </form>
+
+        <div class="paisa">
+            <p class="bibek">Choose Your Payment Plan </p>
+            <p class="pusi">Duration in years: <span id="updated-year" >1</span> years.</p>
+            <button class="ek" onclick="y1()" >1</button>
+            <button class="do" onclick="y2()" >2</button>
+            <button class="teen" onclick="y3()" >3</button>
+            <button class="char" onclick="y4()" >4</button>
+            <button class="panch" onclick="y5()" >5</button>
+            <br>
+            <p class="pusi">Choose Down payment - <span id="down_payment" ></span> </p>
+            <button class="ek" onclick="d10()" >10%</button>
+            <button class="ek" onclick="d20()" >20%</button>
+            <button class="ek" onclick="d30()" >30%</button>
+            <button class="ek" onclick="d40()" >40%</button>
+            <!-- <button class="ek"></button> -->
+            <p class="jiji">Rate of interest @14.5% for <span id="update-year" >1</span> years.</p>
+            <div class="parinaam">
+                <h4>Your Monthly EMI is :  </h4><br>
+                ₹ <span id="emi" ></span> <!--  yahan total calculated price -->
+
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+<script>
+    var amount = 15549999 ;
+    var years =1;
+    var down_payment = document.getElementById('down_payment');
+    var dp_price=10;
+    var emi = document.getElementById('emi');
+    var update_year = document.getElementById('update-year');
+    var updated_year = document.getElementById('updated-year');
+    function y1(){
+        years = 1; 
+        calc();
+        update_year.innerText = '1';
+        updated_year.innerText = '1';
+    }
+    function y2(){
+        years = 2; 
+        calc();
+        update_year.innerText = '2';
+        updated_year.innerText = '2';
+    }
+    function y3(){
+        years = 3; 
+        calc();
+        update_year.innerText = '3';
+        updated_year.innerText = '3';
+    }
+    function y4(){
+        years = 4; 
+        calc();
+        update_year.innerText = '4';
+        updated_year.innerText = '4';
+    }
+    function y5(){
+        years = 5; 
+        calc();
+        update_year.innerText = '5';
+        updated_year.innerText = '5';
+    }
+    function d10(){
+        dp_price =   amount * 1/10;
+        down_payment.innerText = "10% = ₹ " + dp_price;
+        calc()
+    }
+    function d20(){
+        dp_price = amount * 2/10;
+        down_payment.innerText = "20% = ₹ " + dp_price;
+        calc()
+    }
+    function d30(){
+        dp_price = amount * 3/10;
+        down_payment.innerText = "30% = ₹ " + dp_price;
+        calc()
+    }
+    function d40(){
+        dp_price = amount * 4/10;
+        down_payment.innerText = "40% = ₹ " + dp_price;
+        calc()
+    }
+    var roi = 14.5/(100*12);
+    function calc(){
+        var no_of_months = 12* years;
+        var principal = amount - dp_price;
+        var final = (principal * roi * Math.pow((1 + roi), no_of_months)) / (Math.pow((1 + roi), no_of_months) - 1);
+        emi.innerText=final.toFixed(2);
+    }
+    
+    
+</script>
+</html>
