@@ -10,10 +10,11 @@ Welcome to Gedi, a luxury car retail platform that offers an extensive range of 
 
 
 ## Screenshots
-<img src="">
+<img src="https://raw.githubusercontent.com/Tejkaur04/Gedi-Luxury-Car-Retail/refs/heads/main/Untitled%20design.png">
+
 ## Tech Used:
-* **Frontend**- HTML ,CSS ,Bootstrap ,Javascript,React
-* **Backend**- Javascript 
+* **Frontend** - HTML ,CSS ,Bootstrap ,Javascript,React
+* **Backend** - Javascript 
 
 ## Usage
 
