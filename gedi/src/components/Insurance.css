@@ -1,0 +1,130 @@
+.insurance-section {
+    font-family: Arial, sans-serif;
+}
+
+/* Insurance Form Styling */
+.insurance {
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.475);
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+.form-container {
+    flex: 1;
+    padding: 1rem;
+}
+
+.headline {
+    font-size: 24px;
+    color: gray;
+}
+
+.subline {
+    font-size: 14px;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+.input-box {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.input-box:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e60000;
+}
+
+.terms {
+    font-size: 14px;
+}
+
+.car-image {
+    flex: 1;
+    text-align: center;
+}
+
+.car-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Insurance Plans Styling */
+.plan {
+    margin: 2rem auto;
+    max-width: 80%;
+    background-color: rgb(238, 240, 249);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.plans-container {
+    padding: 1rem;
+}
+
+.insurance-plan {
+    margin-bottom: 2rem;
+}
+
+.plan-details {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-features {
+    background-color: rgb(218, 216, 216);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.logo-cell {
+    text-align: center;
+}
+
+.logo-img {
+    width: 160px;
+    height: 70px;
+}
+
+.info-cell, .price-cell {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.feature {
+    padding-left: 20px;
+}
+
+.feature-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}

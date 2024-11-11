@@ -1,0 +1,84 @@
+/* Footer Styling */
+.footer {
+    width: 100%; /* Full-width footer */
+    background-color: #222; /* Dark background color */
+    color: #fff; /* White text for contrast */
+    padding: 40px 20px; /* Adds padding around the footer */
+    text-align: center; /* Centers the text */
+    position: relative;
+    bottom: 0;
+    margin-top: 40vh; /* Space between content and footer */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for separation */
+}
+
+.footer-content {
+    max-width: 1200px; /* Centers content with max width */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    padding-bottom: 20px; /* Space within footer content */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px; /* Ensures sections don’t shrink too small */
+    margin: 10px 0; /* Spacing between sections */
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f40000; /* Highlight color for section titles */
+}
+
+.footer-section a {
+    color: #bbb; /* Light grey color for links */
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff; /* Hover effect for links */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Ensure footer stays below content */
+.catalogue-content {
+    min-height: calc(100vh - 200px); /* Adjusts height to ensure footer is below */
+    padding-bottom: 20px; /* Space for footer without overlap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card styling for catalogue content */
+.card-group {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

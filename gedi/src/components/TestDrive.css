@@ -1,0 +1,61 @@
+.tdbox {
+    height: 100vh;
+    width: 80vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    border-top: 1px solid black;
+}
+
+.tdhead {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.tdsubhead {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.firstbox {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 28vh;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#selected {
+    border: 0;
+    border-bottom: 1px solid black;
+    height: 5vh;
+    outline: 0;
+    margin-bottom: 20px;
+}
+
+.secondbox {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+.submit-button {
+    background-color: #007eed;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.date-picker, .time-picker {
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 10px;
+}

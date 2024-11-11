@@ -336,6 +336,7 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+    margin-bottom: 60px;
 }
 .ok{
     height: 10vh;
@@ -791,11 +792,13 @@
 }
 .boxe1 , .boxe2{
     width: 33%;
+    text-align: center;
 }
 .boxe3{
     display: block;
     width: 33%;
     height: 100%;
+    text-align: center;
 }
 .st{
     margin-top: 3vh;
